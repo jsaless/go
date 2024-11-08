@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-type IBuilder interface {
-	setName(string) IBuilder
-	setProfession(string) IBuilder
-	setAge(int) IBuilder
+type IPersonBuilder interface {
+	setName(string) IPersonBuilder
+	setProfession(string) IPersonBuilder
+	setAge(int) IPersonBuilder
 	build() Person
 }
 
